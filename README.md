@@ -26,3 +26,11 @@ sudo apt-get install python-pip -y
 sudo apt-get install libxml2-dev libxslt-dev python-dev -y  
 sudo pip install pymavlink  
 sudo pip install python-can  
+
+sudo apt install xrdp  
+sudo apt install xfce4  
+Comment out the last two lines in /etc/xrdp/startwm.sh  
+Add the following line to /etc/xrdp/startwm.sh  
+startxfce4  
+Restart xrdp  
+sudo service xrdp restart  
