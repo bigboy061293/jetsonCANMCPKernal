@@ -11,3 +11,11 @@ Select MCP251x CAN Controller
 Save and reboot  
 Make CAN0 and CAN1 inerface up on network:  
 ip link set can0 up type can bitrate 500000  
+
+
+
+To make the CAN-interface permanent, add the following lines to /etc/network/interfaces  
+
+auto can0  
+iface can0 can static  
+    bitrate 500000  
